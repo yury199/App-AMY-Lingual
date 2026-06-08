@@ -64,13 +64,13 @@ const Login: React.FC = () => {
                 </div>
 
 
-              
+
 
             </IonContent>
-              <IonFooter className="login-footer" slot="bottom" >
-                    <p>© 2026 AMY Lingual.</p>
-                    <p> Todos los derechos reservados.</p>
-                </IonFooter>
+            <IonFooter className="login-footer" slot="bottom" >
+                <p>© 2026 AMY Lingual.</p>
+                <p> Todos los derechos reservados.</p>
+            </IonFooter>
         </IonPage>
     );
 };
