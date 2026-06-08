@@ -1,42 +1,62 @@
 /* Centra todo el contenido en la pantalla */
 .el-login {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 .login-contenedor {
---background: #ffffff !important; 
-  border-radius: 12px; 
-  width: 100%;
-  max-width: 320px;
-  margin: 40px auto;
-  text-align: center;
+    background: #ffffff !important;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 480px;
+    padding: 24px;
+    margin: 40px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .login-contenedor h2 {
-  color: #d35400;
-  font-size: 2rem;
-  margin-bottom: 4px;
+    color: #d35400;
+    font-size: 2rem;
+    margin-bottom: 4px;
+}
+
+.login-contenedor form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 /* Estilos sencillos para los campos */
 .login-usuario {
-  text-align: left;
-  margin-bottom: 16px;
+    text-align: left;
+    margin-bottom: 16px;
 }
 
+/* Estilos del label con icono */
 .login-usuario label {
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #333;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-usuario label ion-icon {
+    color: #8a8a8a;
+    font-size: 1.1rem;
 }
 
 /* El cuadro gris del input */
 .login-usuario ion-input {
-  background: #f2f2f2;
-  border-radius: 8px;
-  padding: 8px !important;
-  margin-top: 6px;
+    background: #f2f2f2;
+    border:1px solid #d35400;
+    border-radius: 12px;
+    padding: 8px !important;
+    margin-top: 6px;
 }
