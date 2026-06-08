@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { IonContent, IonPage, IonInput, IonButton, IonIcon, useIonRouter } from '@ionic/react';
+import { IonContent, IonPage, IonInput, IonButton, IonIcon, useIonRouter, IonFooter } from '@ionic/react';
 import { personOutline, lockClosedOutline } from 'ionicons/icons';
 import './Login.css';
 
@@ -26,7 +26,7 @@ const Login: React.FC = () => {
                         <h2>Bienvenido</h2>
                         <p>Inicia sesión para continuar</p>
                     </div>
-                    
+
 
                     <form onSubmit={verificarUsuario}>
 
@@ -50,7 +50,7 @@ const Login: React.FC = () => {
                             </label>
                             <IonInput
                                 type="password"
-                                placeholder="••••••••"
+                                placeholder="••••••"
                                 value={password}
                                 onIonInput={(e) => setPassword(e.detail.value!)}
                             />
@@ -63,7 +63,14 @@ const Login: React.FC = () => {
                     </form>
                 </div>
 
+
+              
+
             </IonContent>
+              <IonFooter className="login-footer" slot="bottom" >
+                    <p>© 2026 AMY Lingual.</p>
+                    <p> Todos los derechos reservados.</p>
+                </IonFooter>
         </IonPage>
     );
 };

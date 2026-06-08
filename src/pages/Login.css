@@ -1,16 +1,14 @@
-/* Centra todo el contenido en la pantalla */
+/* Centra todo el contenido en la pantalla y permite que el footer se quede al fondo */
 .el-login {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    
 }
-
 
 .login-contenedor {
     background: #ffffff !important;
     border-radius: 12px;
-    width: 100%;
-    max-width: 480px;
+    width: 90%;
     padding: 24px;
     margin: 40px auto;
     text-align: center;
@@ -18,6 +16,7 @@
     flex-direction: column;
     gap: 16px;
 }
+
 
 .login-contenedor h2 {
     color: #d35400;
@@ -59,4 +58,15 @@
     border-radius: 12px;
     padding: 8px !important;
     margin-top: 6px;
+}
+/* footer pegado abajo */
+.login-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #d35400;
+    padding:16px;
+    background: #ffffff;
+    font-size: 0.8rem;
 }
