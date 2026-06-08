@@ -39,7 +39,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonTabs>
         
-        {/* EL CONTENEDOR DE PÁGINAS: Aquí se carga el componente según la URL */}
+
         <IonRouterOutlet>
           <Route exact path="/home" component={Home} />
           <Route exact path="/aprender" component={Aprender} />
@@ -47,35 +47,35 @@ const App: React.FC = () => (
           <Route exact path="/perfil" component={Perfil} />
           <Route exact path="/login" component={Login} />
           
-          {/* Si el usuario entra a la raíz '/', lo redirigimos automáticamente a /home */}
+          {/* lo redirigimos automáticamente a LOGIN */}
           <Route exact path="/">
-            <Redirect to="/home" />
+            <Redirect to="/login" />
           </Route>
         </IonRouterOutlet>
 
-        {/* LA BARRA DE PESTAÑAS (Física, en la parte inferior) */}
+        {/* LA BARRA*/}
         {/* Le ponemos slot="bottom" para que se fije abajo */}
         <IonTabBar slot="bottom" className="custom-tab-bar">
-          
-          {/* Pestaña 1: Inicio */}
+
+         
           <IonTabButton tab="home" href="/home">
             <IonIcon aria-hidden="true" icon={homeOutline} />
             <IonLabel>Inicio</IonLabel>
           </IonTabButton>
 
-          {/* Pestaña 2: Aprender */}
+      
           <IonTabButton tab="aprender" href="/aprender">
             <IonIcon aria-hidden="true" icon={schoolOutline} />
             <IonLabel>Aprender</IonLabel>
           </IonTabButton>
 
-          {/* Pestaña 3: Practicar */}
+       
           <IonTabButton tab="practicar" href="/practicar">
             <IonIcon aria-hidden="true" icon={barbellOutline} />
             <IonLabel>Practicar</IonLabel>
           </IonTabButton>
 
-          {/* Pestaña 4: Perfil */}
+     
           <IonTabButton tab="perfil" href="/perfil">
             <IonIcon aria-hidden="true" icon={personOutline} />
             <IonLabel>Perfil</IonLabel>

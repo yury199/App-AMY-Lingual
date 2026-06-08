@@ -1,3 +1,5 @@
+/* ACA VA LOS ESTILOS GENERALES */
+
 /* Estilos barra de nav */
 .custom-tab-bar {
   --background: #e67e22; 
@@ -16,6 +18,11 @@
 .custom-tab-bar ion-tab-button {
   --color: #ffffff;
   --color-selected: #e67e22; 
+  border-radius: 30px;
+}
+.custom-tab-bar ion-tab-button:hover {
+  background: rgba(255, 255, 255, 0.2); 
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* botón activo */
