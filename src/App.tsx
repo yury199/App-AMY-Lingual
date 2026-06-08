@@ -11,9 +11,8 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 
-/* Importamos los íconos oficiales de Ionicons */
+/* Importamos los íconos*/
 import { homeOutline, schoolOutline, barbellOutline, personOutline } from 'ionicons/icons';
-
 
 import Home from './pages/Home';
 import Aprender from './pages/Aprender';
@@ -34,56 +33,59 @@ import './theme/variables.css';
 
 setupIonicReact();
 
+/* Barra de navegación */
+const MainTabs: React.FC = () => {
+  return (
+    <IonTabs>
+      <IonRouterOutlet>
+        <Route exact path="/home" component={Home} />
+        <Route exact path="/aprender" component={Aprender} />
+        <Route exact path="/practicar" component={Practicar} />
+        <Route exact path="/perfil" component={Perfil} />
+      </IonRouterOutlet>
+
+      <IonTabBar slot="bottom" className="custom-tab-bar">
+        <IonTabButton tab="home" href="/home">
+          <IonIcon aria-hidden="true" icon={homeOutline} />
+          <IonLabel>Inicio</IonLabel>
+        </IonTabButton>
+        <IonTabButton tab="aprender" href="/aprender">
+          <IonIcon aria-hidden="true" icon={schoolOutline} />
+          <IonLabel>Aprender</IonLabel>
+        </IonTabButton>
+        <IonTabButton tab="practicar" href="/practicar">
+          <IonIcon aria-hidden="true" icon={barbellOutline} />
+          <IonLabel>Practicar</IonLabel>
+        </IonTabButton>
+        <IonTabButton tab="perfil" href="/perfil">
+          <IonIcon aria-hidden="true" icon={personOutline} />
+          <IonLabel>Perfil</IonLabel>
+        </IonTabButton>
+      </IonTabBar>
+    </IonTabs>
+  );
+};
+
+/* condicional para separar login de las demás pantallas */
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonTabs>
-        
+      <IonRouterOutlet>
 
-        <IonRouterOutlet>
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/aprender" component={Aprender} />
-          <Route exact path="/practicar" component={Practicar} />
-          <Route exact path="/perfil" component={Perfil} />
-          <Route exact path="/login" component={Login} />
-          
-          {/* lo redirigimos automáticamente a LOGIN */}
-          <Route exact path="/">
-            <Redirect to="/login" />
-          </Route>
-        </IonRouterOutlet>
+        <Route exact path="/">
+          <Redirect to="/login" />
+        </Route>
 
-        {/* LA BARRA*/}
-        {/* Le ponemos slot="bottom" para que se fije abajo */}
-        <IonTabBar slot="bottom" className="custom-tab-bar">
+        {/* Pantalla de Login */}
+        <Route exact path="/login" component={Login} />
 
-         
-          <IonTabButton tab="home" href="/home">
-            <IonIcon aria-hidden="true" icon={homeOutline} />
-            <IonLabel>Inicio</IonLabel>
-          </IonTabButton>
+        {/* Si la ruta es cualquiera de estas, carga la barrita) */}
+        <Route path="/home" component={MainTabs} />
+        <Route path="/aprender" component={MainTabs} />
+        <Route path="/practicar" component={MainTabs} />
+        <Route path="/perfil" component={MainTabs} />
 
-      
-          <IonTabButton tab="aprender" href="/aprender">
-            <IonIcon aria-hidden="true" icon={schoolOutline} />
-            <IonLabel>Aprender</IonLabel>
-          </IonTabButton>
-
-       
-          <IonTabButton tab="practicar" href="/practicar">
-            <IonIcon aria-hidden="true" icon={barbellOutline} />
-            <IonLabel>Practicar</IonLabel>
-          </IonTabButton>
-
-     
-          <IonTabButton tab="perfil" href="/perfil">
-            <IonIcon aria-hidden="true" icon={personOutline} />
-            <IonLabel>Perfil</IonLabel>
-          </IonTabButton>
-
-        </IonTabBar>
-
-      </IonTabs>
+      </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
 );
