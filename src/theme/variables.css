@@ -1,2 +1,28 @@
-/* For information on how to create your own theme, please refer to:
-http://ionicframework.com/docs/theming/ */
+/* Estilos barra de nav */
+.custom-tab-bar {
+  --background: #e67e22; 
+  
+
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+
+  border: none;
+  padding: 5px 10px;
+  height: 65px;
+}
+
+/* Estilo para los botones cuando NO están activos*/
+.custom-tab-bar ion-tab-button {
+  --color: #ffffff;
+  --color-selected: #e67e22; 
+}
+
+/* botón activo */
+.custom-tab-bar ion-tab-button.tab-selected {
+  background: #ffffff;
+  color: #e67e22;
+  border-radius: 30px;
+  margin: 5px;
+  transition: all 0.3s ease-in-out; 
+}
