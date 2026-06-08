@@ -11,10 +11,10 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 
-// 1. Importamos los íconos oficiales de Ionicons
+/* Importamos los íconos oficiales de Ionicons */
 import { homeOutline, schoolOutline, barbellOutline, personOutline } from 'ionicons/icons';
 
-// 2. Importamos tus páginas (las que vi en tu captura)
+
 import Home from './pages/Home';
 import Aprender from './pages/Aprender';
 import Practicar from './pages/Practicar';

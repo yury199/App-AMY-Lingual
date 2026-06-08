@@ -1,37 +1,40 @@
 /* Centra todo el contenido en la pantalla */
-.simple-login {
+.el-login {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.login-box {
+
+.login-contenedor {
+--background: #ffffff !important; 
+  border-radius: 12px; 
   width: 100%;
   max-width: 320px;
   margin: 40px auto;
   text-align: center;
 }
 
-.login-box h2 {
-  color: #d35400; /* Color naranja/marrón */
+.login-contenedor h2 {
+  color: #d35400;
   font-size: 2rem;
   margin-bottom: 4px;
 }
 
 /* Estilos sencillos para los campos */
-.field {
+.login-usuario {
   text-align: left;
   margin-bottom: 16px;
 }
 
-.field label {
+.login-usuario label {
   font-size: 0.9rem;
   font-weight: bold;
   color: #333;
 }
 
 /* El cuadro gris del input */
-.field ion-input {
+.login-usuario ion-input {
   background: #f2f2f2;
   border-radius: 8px;
   padding: 8px !important;

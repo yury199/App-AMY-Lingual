@@ -7,7 +7,7 @@ const Login: React.FC = () => {
   const [password, setPassword] = useState('');
   const router = useIonRouter();
 
-  const handleLogin = (e: React.FormEvent) => {
+  const verificarUsuario = (e: React.FormEvent) => {
     e.preventDefault();
     if (email === 'admin' && password === '123') {
       router.push('/home', 'forward');
@@ -18,15 +18,15 @@ const Login: React.FC = () => {
 
   return (
     <IonPage>
-      <IonContent className="ion-padding simple-login">
+      <IonContent className="el-login">
         
-        <div className="login-box">
+        <div className="login-contenedor">
           <h2>Bienvenido</h2>
           <p>Inicia sesión para continuar</p>
 
-          <form onSubmit={handleLogin}>
-            {/* Campo Usuario */}
-            <div className="field">
+          <form onSubmit={verificarUsuario}>
+     
+            <div className="login-usuario">
               <label>Usuario</label>
               <IonInput 
                 type="text" 
@@ -36,8 +36,8 @@ const Login: React.FC = () => {
               />
             </div>
 
-            {/* Campo Contraseña */}
-            <div className="field">
+  
+            <div className="login-usuario">
               <label>Contraseña</label>
               <IonInput 
                 type="password" 
@@ -47,8 +47,8 @@ const Login: React.FC = () => {
               />
             </div>
 
-            {/* Botón */}
-            <IonButton type="submit" expand="block" color="warning">
+  
+            <IonButton  type="submit" expand="block" >
               Inicia Sesión
             </IonButton>
           </form>
