@@ -10,6 +10,7 @@ const Aprender: React.FC = () => {
       </IonHeader>
       <IonContent className="ion-padding">
         <h2>Sección: Aprender Idiomas</h2>
+        <p>hola</p>
       </IonContent>
     </IonPage>
   );
