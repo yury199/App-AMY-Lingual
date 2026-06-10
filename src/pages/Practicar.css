@@ -1,0 +1,25 @@
+.practicar-contenedor {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  width: 80%;
+    margin: 40px auto;
+  gap: 20px;
+}
+.bloque {
+    background: #f2f2f2;
+    border:1px solid #d35400;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    gap: 12px;
+}
+.juego {
+    background: #e0e0e0;
+    border:1px solid #bdc3c7;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    width: 200px;
+    gap: 12px;
+}

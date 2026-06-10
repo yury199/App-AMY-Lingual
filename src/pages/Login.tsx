@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IonContent, IonPage, IonInput, IonButton, IonIcon, useIonRouter, IonFooter } from '@ionic/react';
-import { personOutline, lockClosedOutline } from 'ionicons/icons';
+import { personOutline, lockClosedOutline, person} from 'ionicons/icons';
 import './Login.css';
 
 const Login: React.FC = () => {
@@ -32,8 +32,9 @@ const Login: React.FC = () => {
 
                         <div className="login-usuario">
                             <label>
-                                <IonIcon icon={personOutline} />
-                                Usuario
+                                <IonIcon icon={person} />
+                        
+                                Usuarios
                             </label>
                             <IonInput
                                 type="text"
