@@ -75,7 +75,7 @@ const Aprender: React.FC = () => {
           <div className="clase">
             <div>
               <h3>Gramática Avanzada</h3>
-              <p> Prof. Elena Ruiz</p>
+              <p> Prof. Andrea Gonzalez</p>
             </div>
 
             <div className="hora">
