@@ -1,0 +1,86 @@
+.aprender-contenedor{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.dias{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+}
+
+.dia{
+    min-width:60px;
+    background:#f2f2f2;
+    border-radius:15px;
+    padding:12px;
+    text-align:center;
+}
+
+.dia span{
+    display:block;
+    font-size:12px;
+    color:#666;
+}
+
+.dia strong{
+    font-size:20px;
+}
+
+.activo{
+    background:#f39c12;
+    color:white;
+}
+
+.activo span{
+    color:white;
+}
+
+.curso-card{
+    background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+               url('/assets/ingles.jpg');
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+    color:white;
+}
+
+.estado{
+    color:#ffb84d;
+    font-size:12px;
+}
+
+.clase{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:white;
+    padding:15px;
+    border-radius:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.clase h3{
+    margin:0;
+    font-size:16px;
+}
+
+.clase p{
+    margin:4px 0 0;
+    color:gray;
+}
+
+.hora{
+    text-align:right;
+}
+
+.hora strong{
+    color:#f39c12;
+    font-size:18px;
+}
+
+.hora p{
+    margin:0;
+    font-size:12px;
+}
