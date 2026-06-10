@@ -21,6 +21,8 @@ import {
 } from 'ionicons/icons';
 
 import './Perfil.css';
+import image1 from '../assets/image1.png';
+import imagen2 from '../assets/imagen2.png';
 
 const Perfil: React.FC = () => {
   return (
@@ -36,7 +38,7 @@ const Perfil: React.FC = () => {
 
           <div className="cabecera-perfil">
             <div className="caja-avatar">
-              <img src="#" alt="Usuario" className="avatar-img" />
+              <img src={image1} alt="Usuario" className="image1-img" />
             </div>
             <h2 className="nombre-usuario">Juanita Perez</h2>
           </div>
@@ -81,7 +83,7 @@ const Perfil: React.FC = () => {
             <h3>Mis Maestros</h3>
             <div className="tarjeta lista-maestros">
               <div className="maestro">
-                <img src="#" alt="ANdrea Viviana :p" />
+                <img src={imagen2} alt="Usuario" className="imagen2-img" />
                 <span>Andrea V.</span>
               </div>
               <div className="maestro">
