@@ -62,15 +62,6 @@ const Home: React.FC = () => {
           </IonCard>
 
           
-          <IonCard className="meta">
-            <IonCardContent>
-
-              <p>META DE HOY</p>
-
-              <h2>Completar la unidad 4</h2>
-
-            </IonCardContent>
-          </IonCard>
 
          
 

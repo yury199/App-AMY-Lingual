@@ -86,14 +86,11 @@ const Perfil: React.FC = () => {
                 <img src={imagen2} alt="Usuario" className="imagen2-img" />
                 <span>Andrea V.</span>
               </div>
-              <div className="maestro">
-                <img src="#" alt="Elena" />
-                <span>Elena R.</span>
-              </div>
+              
             </div>
           </div>
 
-          {/* ================= BOTÓN SALIR ================= */}
+         
           <a className="boton-salir" href="/login">
             <IonIcon icon={logOutOutline} /> Cerrar Sesión
           </a>

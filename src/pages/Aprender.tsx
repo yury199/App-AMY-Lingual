@@ -35,42 +35,10 @@ const Aprender: React.FC = () => {
               <span>Lun</span>
               <strong>16</strong>
             </div>
-
-            <div className="dia activo">
-              <span>Mar</span>
-              <strong>17</strong>
-            </div>
-
-            <div className="dia">
-              <span>Mié</span>
-              <strong>18</strong>
-            </div>
-
-            <div className="dia">
-              <span>Jue</span>
-              <strong>19</strong>
-            </div>
-
-            <div className="dia">
-              <span>Vie</span>
-              <strong>20</strong>
-            </div>
           </div>
 
          
-          <IonCard className="curso-card">
-            <IonCardContent>
-              <p className="estado">● EN CURSO</p>
-
-              <h2>Inglés para Negocios</h2>
-
-              <p>Módulo 4: Presentaciones de Impacto</p>
-
-              <IonButton color="warning" shape="round">
-                Unirse ahora
-              </IonButton>
-            </IonCardContent>
-          </IonCard>
+        
 
           
           <h2>Próximas Clases</h2>
