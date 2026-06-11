@@ -56,10 +56,6 @@ const Home: React.FC = () => {
                 <h2>65%</h2>
               </div>
 
-              <div className="barra">
-                <div className="relleno"></div>
-              </div>
-
               <p>Terminas clase el 17 de julio</p>
 
             </IonCardContent>
