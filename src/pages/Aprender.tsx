@@ -90,7 +90,7 @@ const Aprender: React.FC = () => {
           <div className="clase">
             <div>
               <h3>Club de Conversación</h3>
-              <p> Mark Spencer</p>
+              <p> Yuri Briñez</p>
             </div>
 
             <div className="hora">
